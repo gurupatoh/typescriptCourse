@@ -1,14 +1,18 @@
-function add(number1, number2, ShowResult, phrase) {
-    var result = number1 + number2;
-    if (ShowResult) {
-        console.log(phrase + result);
-    }
-    else {
-        return number1 + number2;
-    }
+var person = {
+    name: "patrick",
+    age: 24,
+    hobbies: ['sport', 'chess'],
+    role: [2, 'author'] // tuple -fixed lenght array 
+};
+// explicitly set a variable
+person.role.push('admin');
+// person.role[1]=10;
+var FavouriteActivities; // support multiple types
+FavouriteActivities = ['sports'];
+var favouriteHobbies;
+favouriteHobbies = ['swimming'];
+console.log(person.name);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
 }
-var number1 = '10';
-var number2 = 12;
-var printResult = true;
-var ResultPhrase = 'Result is:';
-add(+number1, +number2, printResult, ResultPhrase);
