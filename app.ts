@@ -21,4 +21,14 @@ console.log(person.name);
   for(const hobby of person.hobbies){
        console.log(hobby.toUpperCase());
   }
+// never type -functions
+// utility functions
+  function generateError(message:string,code:number){
+      throw{message:message,errorcode:code};
+    // while(true){}
+  }
+ const result= generateError('An error  occured',403)
+console.log(result);
+// summary
+// assigned types in js -run time and ts-static types(development)
    
